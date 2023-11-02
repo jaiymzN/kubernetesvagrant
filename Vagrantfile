@@ -39,6 +39,8 @@ Vagrant.configure("2") do |config|
     worker02.vm.provision "shell", inline: <<-SHELL
       sudo apt update
       sudo apt upgrade -y
+
+
     SHELL
   end
 
