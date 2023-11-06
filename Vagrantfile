@@ -9,8 +9,20 @@ Vagrant.configure("2") do |config|
      vb.cpus = 2
     end
     master.vm.provision "shell", inline: <<-SHELL
-     sudo apt update
-     sudo apt upgrade -y
+      sudo apt update
+      sudo apt upgrade -y
+      #prerequisites for installing the container runtime 
+      echo "###################################"
+      echo "Setting up to install container runtime"
+      echo "###################################"
+      sudo bash -c 'cat <<EOF > /etc/modules-load.d/k8s.conf
+      overlay
+      br_netfilter
+      EOF'
+
+      sudo modprobe overlay
+      sudo modprobe br_netfilter
+     
     SHELL
   end
 
