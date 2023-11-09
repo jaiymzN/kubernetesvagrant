@@ -222,7 +222,7 @@ Vagrant.configure("2") do |config|
       echo "####################################"
       echo "Add kubeworker to cluster"
       echo "####################################"
-      kubejoin="cat ./initkube/kubejoin.txt | grep 'kubeadm join'"
+      kubejoin=$(cat ./initkube/kubejoin.txt | grep "kubeadm join")
       $kubejoin   
     SHELL
   end
@@ -330,7 +330,7 @@ Vagrant.configure("2") do |config|
       echo "####################################"
       echo "Add kubeworker to cluster"
       echo "####################################"
-      kubejoin="cat ./initkube/kubejoin.txt | grep 'kubeadm join'"
+      kubejoin=$(cat ./initkube/kubejoin.txt | grep "kubeadm join")
       $kubejoin
     SHELL
   end
