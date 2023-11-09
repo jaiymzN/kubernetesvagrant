@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
     master.vm.box = "generic/ubuntu2204"
     master.vm.network "private_network", ip: "192.168.56.107"
     master.vm.network "public_network"
-    master.vm.synced_folder "C:\\Users\\ebube\\Documents\\RESUME\\PROJECTS\\Kubernetes\\kubernetes-projects\\kubernetesvagrant\\initkube", "/vagrant/initkube"
+    master.vm.synced_folder "C:\\path\\to\\directory", "/vagrant/initkube"
     master.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
      vb.cpus = 2
