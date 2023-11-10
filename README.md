@@ -32,6 +32,7 @@ Set the IP allocation range for the network pod on the master node. Execute the 
 Kubectl edit daemonset -n kube-system weave-net
 
 #In the container section add the following 
+
      containers:
         - name: weave
           env:
