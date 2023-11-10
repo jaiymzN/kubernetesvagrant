@@ -34,7 +34,9 @@ Kubectl edit daemonset -n kube-system weave-net
               value: 10.0.0.0/16
 
 Feedback and Contributions
+
 Contributions are welcome! If you have suggestions, improvements, or issues, feel free to open an issue or submit a pull request.
 
-Acknowledgements
+Acknowledgments
+
 Thank you to the open-source community and contributors who make projects like these possible.
