@@ -13,23 +13,24 @@ Make sure you have the following installed on your machine:
 Getting Started
 1. Clone this repository:
    
-git clone https://github.com/jaiymzN/kubernetesvagrant.git
+         git clone https://github.com/jaiymzN/kubernetesvagrant.git
 
-cd kubernetesvagrant
+         cd kubernetesvagrant
 
 2. Customize the Vagrantfile:
+   
 Edit the Vagrantfile to adjust parameters such as the number of nodes, resources allocated to each node, and any other configurations based on your requirements.
 
 3. Provision the Kubernetes Cluster:
 Run the following command to provision the Kubernetes cluster:
 
-vagrant up
+         vagrant up
 
 4. Manual Configuration on Master Node:
 While provisioning automates most of the process, there's one manual step:
 Set the IP allocation range for the network pod on the master node. Execute the necessary commands on the master node as mentioned below:
 
-Kubectl edit daemonset -n kube-system weave-net
+         Kubectl edit daemonset -n kube-system weave-net
 
 #In the container section add the following 
 
