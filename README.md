@@ -36,5 +36,5 @@ Kubectl edit daemonset -n kube-system weave-net
 Feedback and Contributions
 Contributions are welcome! If you have suggestions, improvements, or issues, feel free to open an issue or submit a pull request.
 
-Acknowledgments
+Acknowledgements
 Thank you to the open-source community and contributors who make projects like these possible.
