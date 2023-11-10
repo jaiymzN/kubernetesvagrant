@@ -17,15 +17,15 @@ git clone https://github.com/jaiymzN/kubernetesvagrant.git
 
 cd kubernetesvagrant
 
-3. Customize the Vagrantfile:
+2. Customize the Vagrantfile:
 Edit the Vagrantfile to adjust parameters such as the number of nodes, resources allocated to each node, and any other configurations based on your requirements.
 
-4. Provision the Kubernetes Cluster:
+3. Provision the Kubernetes Cluster:
 Run the following command to provision the Kubernetes cluster:
 
 vagrant up
 
-6. Manual Configuration on Master Node:
+4. Manual Configuration on Master Node:
 While provisioning automates most of the process, there's one manual step:
 Set the IP allocation range for the network pod on the master node. Execute the necessary commands on the master node as mentioned below:
 
