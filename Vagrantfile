@@ -123,6 +123,7 @@ Vagrant.configure("2") do |config|
     worker01.vm.box = "generic/ubuntu2204"
     worker01.vm.network "private_network", ip: "192.168.56.108"
     worker01.vm.network "public_network"
+    worker01.vm.synced_folder "C:\\path\\to\\directory", "/vagrant/initkube"
     worker01.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
      vb.cpus = 2
@@ -231,6 +232,7 @@ Vagrant.configure("2") do |config|
     worker02.vm.box = "generic/ubuntu2204"
     worker02.vm.network "private_network", ip: "192.168.56.109"
     worker02.vm.network "public_network"
+    worker02.vm.synced_folder "C:\\path\\to\\directory", "/vagrant/initkube"
     worker02.vm.provider "virtualbox" do |vb|
       vb.memory = "2048"
       vb.cpus = 2
